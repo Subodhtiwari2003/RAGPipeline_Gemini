@@ -10,3 +10,4 @@ python-pptx
 PyPDF2
 pdfplumber
 beautifulsoup4
+requests
