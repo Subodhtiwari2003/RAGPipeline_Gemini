@@ -1,0 +1,13 @@
+langchain==0.1.20
+langchain-chroma==0.2.6
+langchain-google-genai==0.0.6
+google-generativeai==0.3.2
+chromadb==0.4.22
+langgraph==0.0.22
+langchain-text-splitters==0.0.4
+python-docx
+python-pptx
+PyPDF2
+pdfplumber
+beautifulsoup4
+requests
