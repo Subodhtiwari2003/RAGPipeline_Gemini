@@ -4,10 +4,10 @@ langchain-google-genai==0.0.6
 google-generativeai==0.3.2
 chromadb==0.4.22
 langgraph==0.0.22
-langchain-text-splitters==0.0.4
-python-docx
-python-pptx
-PyPDF2
-pdfplumber
-beautifulsoup4
-requests
+langchain-text-splitters==0.3.11
+python-docx==1.2.0          # Latest stable as of June 2025
+python-pptx==0.6.21         # Stable and widely used
+PyPDF2==3.0.1               # Latest major release with bug fixes
+pdfplumber==0.10.4          # Compatible with PyPDF2 3.x
+beautifulsoup4==4.12.2      # Latest with parser improvements
+requests==2.31.0            # Stable and secure
