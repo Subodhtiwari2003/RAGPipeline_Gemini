@@ -1,16 +1,12 @@
 import os
 
-# Define the base directory
-base_dir = "RAGPipeline_Gemini"
-
-# Define the folder structure
+# No base_dir — we use current directory
 folders = [
     "app/core",
     "app/modules",
     "app/prompts"
 ]
 
-# Define the files with their paths
 files = {
     "app/core/config.py": "# Environment variables & Settings\n",
     "app/core/logging.py": "# Custom logger setup\n",
@@ -25,21 +21,15 @@ files = {
     "requirements.txt": "# Dependencies\n"
 }
 
-def create_structure():
-    # Create base directory
-    os.makedirs(base_dir, exist_ok=True)
-
-    # Create subfolders
+def create_structure_here():
     for folder in folders:
-        os.makedirs(os.path.join(base_dir, folder), exist_ok=True)
+        os.makedirs(folder, exist_ok=True)
 
-    # Create files
     for filepath, content in files.items():
-        full_path = os.path.join(base_dir, filepath)
-        with open(full_path, "w") as f:
+        with open(filepath, "w") as f:
             f.write(content)
 
-    print(f"✅ Project structure created under '{base_dir}'")
+    print("✅ Structure added to current directory")
 
 if __name__ == "__main__":
-    create_structure()
+    create_structure_here()
